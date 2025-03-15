@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>YouTube.com Clone</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+        
+    </head>
+    <body>
+
+        <header class="header">
+
+            <div class="left-section">
+                <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
+                <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+            </div>
+
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <!--Put position absolute inside position relative-->
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg" alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+
+            <div class="right-section">
+
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg" alt="">
+                    <div class="tooltip">Create</div>
+                </div>
+
+                <div class="youtube-apps-icon-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+               
+                <div class="notification-icon-container">
+                    <img class="notification-icon" src="icons/notifications.svg" alt="">
+                    <div class="tooltip">notifications</div>
+                    <div class="notifications-count">3</div>
+                </div>
+                
+                <img class="current-user-picture" src="channel-pictures/my-channel.jpeg" alt="">
+                
+
+            </div>
+
+        </header>
+
+        <nav class="sidebar">
+
+            <div class="sidebar-link">
+                <img src="icons/home.svg" alt="">
+                <div>Home</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="icons/explore.svg" alt="">
+                <div>Explore</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="icons/subscriptions.svg" alt="">
+                <div>Subscriptions</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="icons/originals.svg" alt="">
+                <div>Originals</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="icons/youtube-music.svg" alt="">
+                <div>YouTube Music</div>
+            </div>
+
+            <div class="sidebar-link">
+                <img src="icons/library.svg" alt="">
+                <div>Library</div>
+            </div>
+
+        </nav>
+        
+        <main>
+            <section class="video-grid">
+
+                <div class="video-preview">
+                    
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/TX9qSaGXFyg?si=tKBLOVdDXa8S5tLV">
+                        <img class="thumbnail" src="thumbnails/apple-vision.jpg" alt="">
+                        <div class="video-time">9:11</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/apple.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Introducing Apple Vision Pro
+                            </p>
+                            <p class="video-author">
+                                Apple
+                            </p>
+                            <p class="video-stats">
+                                65M views &middot; 1 year ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/uVEALvpoiMQ?si=t5AM9uq7fACqQjJk">
+                        <img class="thumbnail" src="thumbnails/work-meta.jpg" alt="">
+                        <div class="video-time">1:37</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/meta.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                Work in the metaverse
+                            </p>
+                
+                            <p class="video-author">
+                                Meta
+                            </p>
+                
+                            <p class="video-stats">
+                                727K views &middot; 3 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/QkOJ16lrTuk?si=BVS2k_lapJJp1_v3">
+                        <img class="thumbnail" src="thumbnails/shot-on-iphone.jpeg" alt="">
+                        <div class="video-time">3:12</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/apple.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                Shot on iPhone 16 Pro | Chinese New Year | Apple
+                            </p>
+                
+                            <p class="video-author">
+                                Apple
+                            </p>
+                
+                            <p class="video-stats">
+                                153K views &middot; 2 months ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/J2U9Hmmpqhc?si=szgIKjOmWx4T7DNG">
+                        <img class="thumbnail" src="thumbnails/cyber-truck.jpg" alt="">
+                        <div class="video-time">00:34</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/tesla.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">                            
+                                Cybertruck Reveal
+                            </p>
+                
+                            <p class="video-author">
+                                Tesla
+                            </p>
+                
+                            <p class="video-stats">
+                                5.1M views &middot; 5 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/mi5Kg7FED-E?si=J0Fd_gF4JWKufex_">
+                        <img class="thumbnail" src="thumbnails/bugatti.jpg" alt="">
+                        <div class="video-time">4:53</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/bugatti1.jpg">
+                        </div>
+                        
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                BUGATTI – A New Era: Master of Air​
+                            </p>
+                
+                            <p class="video-author">
+                                Bugatti
+                            </p>
+                
+                            <p class="video-stats">
+                                444K views &middot; 1 month ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/Pyh2GpnIFP0?si=IJBoFhc7kLhN7i01">
+                        <img class="thumbnail" src="thumbnails/samsung-fold.jpg" alt="">
+                        <div class="video-time">1:00</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/samsung.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                Galaxy Fold | Official Introduction | Samsung
+                            </p>
+                
+                            <p class="video-author">
+                                Samsung
+                            </p>
+
+                            <p class="video-stats">
+                                163K views &middot; 5 years ago
+                            </p>
+
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="video-preview">
+                    
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/FhKOuxhGlmI?si=nM7hw0SXNkpifi9r">
+                        <img class="thumbnail" src="thumbnails/iss1.jpg" alt="">
+                        <div class="video-time">15:30</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/iss.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                How did they build the ISS? (International Space Station)
+                            </p>
+                            <p class="video-author">
+                                Jared Owen
+                            </p>
+                            <p class="video-stats">
+                                5.1M views &middot; 1 year ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/66XwG1CLHuU?si=bMEJE4MRZWyF26C2">
+                        <img class="thumbnail" src="thumbnails/apple.jpg" alt="">
+                        <div class="video-time">1:16</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/apple.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                Every product carbon neutral by 2030 | Apple
+                            </p>
+                
+                            <p class="video-author">
+                                Apple
+                            </p>
+                
+                            <p class="video-stats">
+                                3.3M views &middot; 3 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <a href="https://youtu.be/rTDaZoDDW5g?si=9s2Sul6B0uQHFWjV">
+                    <div class="thumbnail-row">
+                        <img class="thumbnail" src="thumbnails/india1.jpg" alt="">
+                        <div class="video-time">14:13</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/india2.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                Incredible India 4k - The Real India Revealed in 14 Minutes
+                            </p>
+                
+                            <p class="video-author">
+                                Explore India
+                            </p>
+                
+                            <p class="video-stats">
+                                2.2M views &middot; 1 year ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/F83stxxjnIw?si=vHXuEzCCvw492J5f">
+                        <img class="thumbnail" src="thumbnails/kollengod1.jpg" alt="">
+                        <div class="video-time">16:46</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/kollengod.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            <p class="video-title">                            
+                                Kollengode | One of the best village in India | Kerala | Vlog#58
+                            </p>
+                
+                            <p class="video-author">
+                                Navigator - The Explorer
+                            </p>
+                
+                            <p class="video-stats">
+                                2.5M views &middot; 1 year ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/cOa97mBh8co?si=GcZHi06xUYn7vwTA">
+                        <img class="thumbnail" src="thumbnails/india.jpg" alt="">
+                        <div class="video-time">35:08</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/india-.jpg">
+                        </div>
+                        
+
+                        <div class="video-info">
+                            <p class="video-title">
+                                WONDERS OF INDIA | 15 Most Breathtaking and Incredible Places You Must Visit
+                            </p>
+                
+                            <p class="video-author">
+                                Travel With Nom Nom
+                            </p>
+                
+                            <p class="video-stats">
+                                1.1M views &middot; 7 months ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/qO66WeTTFpQ?si=o5HlqGmsxYTOIdwY">
+                        <img class="thumbnail" src="thumbnails/india4.jpg" alt="">
+                        <div class="video-time">20:29</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/NGCIN.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                From Ladakh to Kerala! | It Happens Only in India | Full Episode | S04-E04 | National Geographic
+                            </p>
+                
+                            <p class="video-author">
+                                National Geographic India
+                            </p>
+
+                            <p class="video-stats">
+                                1.5M views &middot; 1 year ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/C7OQHIpDlvA?si=jpKszORJMKha7Nkb">
+                        <img class="thumbnail" src="thumbnails/thewait.jpg" alt="">
+                        <div class="video-time">1:00</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/thewait2.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                The Wait - 1 Minute Short Film | Award Winning
+                
+                            <p class="video-author">
+                                Morphine
+                            </p>
+
+                            <p class="video-stats">
+                                4.1M views &middot; 4 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/xV9HnITo2C0?si=rE2KON_SsPbv1Ggw">
+                        <img class="thumbnail" src="thumbnails/toast.jpg" alt="">
+                        <div class="video-time">00:59</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/toast.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                'Toast' - One Minute Comedy Film | Award Winning
+                            </p>
+                
+                            <p class="video-author">
+                                Moloney Media
+                            </p>
+
+                            <p class="video-stats">
+                                727K views &middot; 7 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/zACGLjd9JNY?si=DTfdphPGa5HEYjwR">
+                        <img class="thumbnail" src="thumbnails/two.jpg" alt="">
+                        <div class="video-time">12:02</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/oscars.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                "Two" by Satyajit Ray
+                            </p>
+                
+                            <p class="video-author">
+                                Oscars
+                            </p>
+
+                            <p class="video-stats">
+                                4.3M views &middot; 8 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://youtu.be/k1vCrsZ80M4?si=Jo3lzw-JOa9ll6b">
+                        <img class="thumbnail" src="thumbnails/the-neighbour-window.jpg" alt="">
+                        <div class="video-time">20:37</div>
+                        </a>
+                    </div>
+                    <div class="video-info-grid">
+                        
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="channel-pictures/the-neighbour-window.jpg">
+                        </div>
+
+                        <div class="video-info">
+                            
+                            <p class="video-title">
+                                The Neighbors' Window - Oscar Winning Short Film
+                            </p>
+                
+                            <p class="video-author">
+                                marshallcurry
+                            </p>
+
+                            <p class="video-stats">
+                                19M views &middot; 5 years ago
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>
